@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links and images</title>
+</head>
+
+<body>
+
+    <!-- Ấn giữ Alt xong clikck vào vị trí cần sửa hàng loại  -->
+    <!-- tạo 1 thẻ mới dùng target="_blank" -->
+    <a href="#">Lên đầu trang</a><br>
+
+    <a href="https://google.com" target="_blank"> Go to google</a><br>
+
+    <!-- Mở lien kết trang tại trang hiện tại dùng _self -->
+    <a href="https://google.com" target="_self"> Go to google</a><br>
+
+    <a href="https://facebook.com" target="_blank"> Go to facebook</a><br>
+
+    <a href="https://youtube.com" target="_blank"> Go to ytb</a><br>
+
+    <a href="https://Linkedin.com" target="_blank"> Go to Linkedin</a><br>
+
+    <!--Để tối ưu hơn về hiệu năng và bảo mật, hãy thêm rel="noopener" vào toàn bộ các thẻ a có target="_blank"  -->
+    <a href="https://Linkedin.com" target="_blank" rel="noopener"> Go to Linkedin</a><br><br>
+
+
+    <a href="/tut1.html" target="_blank">TUT 1</a><br><br>
+
+    <!-- Liên kết tới 1 địa chỉ email (mailto :   )-->
+
+    <a href="mailto:trungan2004nd@gmail.com" target="_blank">Email me</a><br><br>
+
+    <!-- ? phân tách giữa các phần tham số và mailto ( cc, bcc, subject.. ) -->
+    <!-- & ngăn cashc giữa các tham số -->
+    <a href="mailto:trungan2004nd@gmail.com
+     ?cc=sLz6w@example.com, cc2=sLz6w@example.com
+     &bcc=sLz6w@example.com
+     &subject=Hello&body=Hi" target="_blank">Email me</a><br><br>
+
+    <!-- Liên kết tới 1 số điện thoại, khi ấn vào sẽ có thể chuyển sang cuộc gọi ( tel:   )-->
+
+    <a href="tel:+84 888826529">Call me</a><br><br>
+
+    <a href="/tut2.html" target="_blank">TUT 2</a><br><br>
+
+    <!-- Khi href của thẻ <a> trỏ về URL cùng tên miền với trang web hiện tại, có thể thêm thuộc tính download để liên kết trở thành một liên kết tải xuống -->
+    <!-- Chỉ tải được ảnh có cùng tên miền với web hiện tại -->
+
+    <a href="https://source.unsplash.com/user/erondu/300x100" download> download img</a> <br><br>
+
+    <!-- Không có ảnh ở đây nó sẽ hiện alt = -->
+    <img src="An.jpg" alt="Eror loading image"><br><br>
+
+
+    <!-- Khi có ảnh -->
+
+    <img src="https://source.unsplash.com/user/erondu/300x100" alt="Eror loading image" width="222" height="222">
+
+    <!-- JPG/JPEG -->
+    <!-- Hình ảnh trong nội dung bài viết (blog, bài post trên Facebook, v.v)
+            \Ảnh quảng cáo, banner không đòi hỏi ảnh trong suốt -->
+
+    <!-- <!  -- PNG --  > Ảnh trên web yêu cầu độ trong suốt (logo, biểu tượng, v.v)
+                            Các hình ảnh có kết hợp màu phức tạp như màu chuyển
+                            Các hình ảnh cần chỉnh sửa lại nhiều lần -->
+
+
+    <!-- SVG -->
+    <!-- Logo, icon với thiết kế dạng hình học, vector
+        Hình ảnh cần đáp ứng nhiều kích thước khác nhau -->
+
+
+
+
+    <!-- Có thể sử dụng width và height để chỉnh size alt="Eror loading image" width="222" height="222"> -->
+
+    <!-- Kết hợp menu với mục lục -->
+    <!-- Ở đây sử dụng href="#!"  để giữ chỗ cho liên kết để tránh bị tải lại trang hay nhảy về đầu trang-->
+    <ul>
+        <li>
+            <a href="#!">Meet Laravel</a>
+            <ul>
+                <li><a href="#!">Why Laravel?</a></li>
+            </ul>
+        </li>
+        <li><a href="#!">Your First Laravel Project</a></li>
+        <li>
+            <a href="#!">Laravel & Docker</a>
+            <ul>
+                <li><a href="#!">Getting Started On macOS</a></li>
+                <li><a href="#!">Getting Started On Windows</a></li>
+                <li><a href="#!">Getting Started On Linux</a></li>
+                <li><a href="#!">Choosing Your Sail Services</a></li>
+            </ul>
+        </li>
+    </ul>
+
+
+
+
+
+
+</body>
+
+</html>
